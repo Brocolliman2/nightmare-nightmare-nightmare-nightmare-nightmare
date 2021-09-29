@@ -1,0 +1,23 @@
+PImage img;
+int counter = 0;
+
+void setup(){
+  size(800,800);
+}
+
+void draw() {
+  background(255,255,255);
+  if (mousePressed == true) {
+    img = loadImage("nightmare.jpg");
+    image(img,0,0,800,800);
+     counter++;
+     fill(255,255,255);
+  text(counter,400,400);
+  textSize(50);
+  } 
+  else {
+    img = loadImage("popcat.jpg");
+    image(img,0,0,800,800);
+  }
+}
+    
